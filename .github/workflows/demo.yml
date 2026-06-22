@@ -7,11 +7,10 @@ jobs:
       - name: Get Code from Repo
         uses: actions/checkout@v5
       - name: Install NodeJS
-        uses: actions/setup-node@v3
-       with:
-        node-version: 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
       - name: Install dependencies
         run: npm ci
       - name: Run tests
         run: npm test
-  
