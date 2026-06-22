@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-24.04
     defaults:
       run:
-        working-directory: ./01-starting-project   # <-- set to the actual folder
+        working-directory: ./"02 Starting Project"   # <-- set to the actual folder
     steps:
       - name: Get Code from Repo
         uses: actions/checkout@v5
